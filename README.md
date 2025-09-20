@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Components Practice
 
-## Getting Started
+A small React/Next.js playground for building and experimenting with reusable UI components.  
+This project is meant to practice React patterns, props, state management, and composition by implementing self-contained components like counters, cards, and to-do lists.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- **Task Wrapper** – A layout component (`Task`) that renders each practice exercise with a title, description, preview, and optional “View Component” link.  
+- **Counter** – A simple stateful counter with increment, decrement, and reset buttons. Demonstrates `useState` and functional updates.  
+- **FacebookCard** – A mock social media “Add Friend” card that accepts props (`name`, `title`, `profileImage`, `mutualFriendImage`, etc.). Demonstrates props, composition, and styling with Tailwind.  
+- **To-Do List** – A simple list with add/remove functionality to practice list rendering and event handling.  
+- **More Coming** - more tasks coming soon!!!
+
+---
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/) (App Router)  
+- [React](https://react.dev/)  
+- [Tailwind CSS](https://tailwindcss.com/) for styling  
+
+---
+
+## 📂 Project Structure
+
+```
+app/
+  page.js                # Main practice page
+components/
+  Counter.jsx            # Counter component
+  FacebookCard.jsx       # Facebook-style card component
+  Task.jsx               # Task wrapper component
+  ToDo.jsx               # To-do list component
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🔧 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/glennnoronha/react-components-practice.git
+   cd react-components-practice
+   ```
 
-## Learn More
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the dev server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Open in browser**  
+   Visit [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💡 How It Works
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Each component is wrapped in a `Task` that provides:
+- Title & description for context  
+- Component preview box  
+- Optional link to a standalone demo page  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This makes it easy to practice React component design while keeping everything organized in one place.
+
+---
+
+## 📚 Lessons Learned
+
+- Passing props to components for reusability  
+- Using state with `useState` and functional updates  
+- Composition with `children` instead of hard-coded component props  
+- Consistent styling with Tailwind utilities  
+
+---
+
+## 📌 Roadmap
+
+- [ ] Add form components (inputs, checkboxes, etc.)  
+- [ ] Add a modal component  
+- [ ] Add more social card variations  
+- [ ] Add tests with Jest/React Testing Library  
+
+---
+
+## 🖼️ Screenshots
+
+*Screenshots will be here in the future*
+
+---
+
+## 📜 License
+
+MIT License
