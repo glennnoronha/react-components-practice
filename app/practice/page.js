@@ -27,20 +27,41 @@ export default function Practice() {
             <Task
               title="Task 1: Counter Component"
               description="Build a simple Counter component using React Hooks, and display it below."
-              component={Counter}
-            />
+              viewHref="/practice/counter"
+            >
+              <Counter />
+            </Task>
             <Task
               title="Task 2: Facebook Cards"
               description="Build the facebook Add a Friend card."
-              component={FacebookCard}
-            />
+              viewHref="/practice/facebook"
+            >
+              <div className="flex flex-row justify-content-between">
+                <FacebookCard
+                  name="Gavin Godfrey"
+                  title="Software Developer"
+                  profileImage="/profile-1.png"
+                  mutualFriendImage="/profile-3.png"
+                  mutualFriends="1 mutual friends"
+                  className="mx-auto"
+                />
+                <FacebookCard
+                  name="Gavin Godfrey"
+                  title="Software Developer"
+                  profileImage="/profile-1.png"
+                  mutualFriendImage="/profile-3.png"
+                  mutualFriends="1 mutual friends"
+                  className="mx-auto"
+                />
+              </div>
+            </Task>
             <Task
               title="Task 3: To-Do List Component"
               description="Build a simple To-Do List where users can add and remove tasks."
-              component={ToDo}
-            />
-
-            
+              viewHref="/practice/todo"
+            >
+              <ToDo />
+            </Task>
           </div>
         </div>
       </div>
