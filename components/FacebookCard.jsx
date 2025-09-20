@@ -11,7 +11,7 @@ const FacebookCard = ({
 }) => {
   return (
     <div className={className}>
-      <div className="flex-col bg-[#333335] rounded-2xl w-[400px] mb-3 mx-auto">
+      <div className="flex-col bg-[#333335] rounded-2xl w-full max-w-sm mb-3 mx-auto">
         <img className="rounded-t-2xl" src={profileImage} alt={name} />
         <div className="py-2 px-3">
           <h3 className="text-white font-medium">{name}</h3>

@@ -36,7 +36,7 @@ export default function Practice() {
               description="Build the facebook Add a Friend card."
               viewHref="/practice/facebook"
             >
-              <div className="flex flex-row justify-content-between">
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center sm:justify-between gap-4">
                 <FacebookCard
                   name="Gavin Godfrey"
                   title="Software Developer"
