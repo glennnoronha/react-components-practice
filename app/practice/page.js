@@ -45,7 +45,6 @@ export default function Practice() {
                   mutualFriends="1 mutual friends"
                   className="mx-auto"
                 />
-                
               </div>
             </Task>
             <Task
@@ -58,7 +57,6 @@ export default function Practice() {
           </div>
         </div>
       </div>
-      <Header />
     </>
   );
 }

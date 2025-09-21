@@ -10,7 +10,7 @@ function Task({
   viewLabel = "View component on new page",
 }) {
   return (
-    <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-300 border border-gray-700/50 hover:border-gray-600/50">
+    <div className="bg-gray-800/50 rounded-2xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-300 border border-gray-700/50 hover:border-gray-600/50">
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-white mb-3 flex items-center gap-3">
           <span className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold" />

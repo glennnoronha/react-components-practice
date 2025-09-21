@@ -46,8 +46,8 @@ export default function ToDo() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-gray-700/50">
+    <div className="max-w-3xl mx-auto">
+      <div className="bg-gray-800/50 rounded-2xl shadow-2xl p-8 border border-gray-700/50">
         {/* Header */}
         <div className="text-center mb-8">
           <h3 className="text-4xl font-bold ">To-Do List</h3>
@@ -93,7 +93,6 @@ export default function ToDo() {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   {/* Top Row: Task Number and Text */}
                   <div className="flex items-center gap-4 flex-grow">
-
                     {/* Task Text */}
                     <span className="text-white font-medium text-lg">
                       {task}
