@@ -93,10 +93,6 @@ export default function ToDo() {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   {/* Top Row: Task Number and Text */}
                   <div className="flex items-center gap-4 flex-grow">
-                    {/* Task Number */}
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold text-white flex-shrink-0">
-                      {index + 1}
-                    </div>
 
                     {/* Task Text */}
                     <span className="text-white font-medium text-lg">
@@ -105,7 +101,7 @@ export default function ToDo() {
                   </div>
 
                   {/* Bottom Row (Mobile) / Right Side (Desktop): Action Buttons */}
-                  <div className="flex items-center gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200 justify-end sm:justify-start">
+                  <div className="flex items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 justify-end sm:justify-start">
                     {/* Move Up */}
                     <button
                       className="w-8 h-8 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
