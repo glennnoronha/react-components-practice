@@ -45,14 +45,7 @@ export default function Practice() {
                   mutualFriends="1 mutual friends"
                   className="mx-auto"
                 />
-                <FacebookCard
-                  name="Gavin Godfrey"
-                  title="Software Developer"
-                  profileImage="/profile-1.png"
-                  mutualFriendImage="/profile-3.png"
-                  mutualFriends="1 mutual friends"
-                  className="mx-auto"
-                />
+                
               </div>
             </Task>
             <Task

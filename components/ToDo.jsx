@@ -50,26 +50,24 @@ export default function ToDo() {
       <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-gray-700/50">
         {/* Header */}
         <div className="text-center mb-8">
-          <h3 className="text-4xl font-bold ">
-            To-Do List
-          </h3>
+          <h3 className="text-4xl font-bold ">To-Do List</h3>
           <p className="text-gray-300 mt-2">Stay organized and productive</p>
         </div>
 
         {/* Add Task Section */}
         <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-700/30 mb-6">
-          <div className="flex gap-3">
+          <div className="flex flex-col sm:flex-row gap-3">
             <input
               type="text"
               name="text"
-              className="bg-gray-700/50 border border-gray-600/50 rounded-lg px-4 py-3 flex-grow text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+              className="bg-gray-700/50 border border-gray-600/50 rounded-lg px-3 py-2 sm:px-4 sm:py-3 flex-grow text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-sm sm:text-base"
               placeholder="Enter a new task..."
               value={newTask}
               onChange={handleInput}
               onKeyDown={(e) => e.key === "Enter" && addTask()}
             />
             <button
-              className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+              className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 text-sm sm:text-base whitespace-nowrap"
               onClick={addTask}
             >
               Add Task
@@ -92,19 +90,22 @@ export default function ToDo() {
                 key={index}
                 className="bg-gray-900/30 hover:bg-gray-900/50 rounded-xl p-4 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-200 group"
               >
-                <div className="flex items-center gap-4">
-                  {/* Task Number */}
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold text-white flex-shrink-0">
-                    {index + 1}
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                  {/* Top Row: Task Number and Text */}
+                  <div className="flex items-center gap-4 flex-grow">
+                    {/* Task Number */}
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold text-white flex-shrink-0">
+                      {index + 1}
+                    </div>
+
+                    {/* Task Text */}
+                    <span className="text-white font-medium text-lg">
+                      {task}
+                    </span>
                   </div>
 
-                  {/* Task Text */}
-                  <span className="flex-grow text-white font-medium text-lg">
-                    {task}
-                  </span>
-
-                  {/* Action Buttons */}
-                  <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  {/* Bottom Row (Mobile) / Right Side (Desktop): Action Buttons */}
+                  <div className="flex items-center gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200 justify-end sm:justify-start">
                     {/* Move Up */}
                     <button
                       className="w-8 h-8 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"

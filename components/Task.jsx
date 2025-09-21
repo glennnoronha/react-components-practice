@@ -32,7 +32,7 @@ function Task({
         <div className="flex justify-end mt-3">
           <Link
             href={viewHref}
-            className="bg-gray-800 px-4 py-2 rounded text-white hover:opacity-80"
+            className="bg-gray-700 px-4 py-2 rounded text-white hover:opacity-80"
           >
             {viewLabel}
           </Link>
